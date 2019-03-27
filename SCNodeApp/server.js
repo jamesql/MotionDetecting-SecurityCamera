@@ -1,5 +1,7 @@
 // Time (ms) between frame captures
 var timeLapse = 2000;
+// How much motion is needed for it to be triggered
+var motionTh = 0.03; 
 
 const express = require('express');
 const path = require('path');
@@ -72,8 +74,9 @@ function getChangedPixels(iNum1,INum2) {
         Jimp.read('screenshot'+INum2+".jpg")
         .then(image2 => {
          var difff = Jimp.diff(image1,image2,0.2);
-         console.log(difff.percent);
-         if (difff.percent > 0.03) {
+          // Used for debuggin
+          //console.log(difff.percent);
+         if (difff.percent > motionTh) {
             console.log("Detected Motion on Camera");
          }else{
              console.log("No Motion Detected")
