@@ -12,3 +12,6 @@ Uses a RTMP Server and asynchronous screenshotting to detect motion from a iPhon
 - livestream to rtmp server
 
 # Motion Detecting in NodeJS (Jimp & PixelMatch API's)
+
+# Dependencies
+- `npm install node-media-server`
