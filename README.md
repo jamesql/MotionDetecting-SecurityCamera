@@ -1,4 +1,4 @@
-# MotionDetecting-SecurityCamera
+# Motion Detecting Security Camera in NodeJS
 Uses a RTMP Server and asynchronous screenshotting to detect motion from a iPhone camera!
 - Saves .jpg images that are detected to have motion in timelapse style.
 
