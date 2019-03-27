@@ -14,4 +14,11 @@ Uses a RTMP Server and asynchronous screenshotting to detect motion from a iPhon
 # Motion Detecting in NodeJS (Jimp & PixelMatch API's)
 
 # Dependencies
-- `npm install node-media-server`
+- `npm install node-media-server` (RTMP Server)
+- `npm install --safe jimp` (Image Proccessing & Detection)
+- `npm install express` (Live Feed Hosting), can be disabled with removal of code
+- `npm install cookieParser` (Not Needed)
+- `npm install cookieSession` (Not Needed)
+- `npm install screenshot-desktop` (Screenshotting)
+- `npm install morgan` (Logging)
+- `VLC Media Player` (Used to capture RTMP Stream to take screenshots of) Can be swaped with /viewstream, etc...
