@@ -12,6 +12,11 @@ Uses a RTMP Server and asynchronous screenshotting to detect motion from a iPhon
 - livestream to rtmp server
 
 # Motion Detecting in NodeJS (Jimp & PixelMatch API's)
+- Screenshots frames from RTMP Server using screenshot-desktop & vlc
+- calculates the % of pixels from each frame that have changed
+- based on that % judges wheter there has been motion on the screen
+- ~ %98 Accuracy in well lit room
+
 
 # Dependencies
 - `npm install node-media-server` (RTMP Server)
